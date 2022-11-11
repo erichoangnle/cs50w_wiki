@@ -8,12 +8,15 @@
     <h1>Create New Entry Page</h1>
     <form action="/new_page/" method="post">
         {% csrf_token %}
-        <h5>Title</h5>
-        <input type="text" name="title">
-        <br>
-        <h5>Enter new entry</h5>
-        <textarea id="entry" name="entry"></textarea>
-        <br>
-        <input type="submit" value="Submit">
+
+        <div class="form-group">
+            <h5>Title</h5>
+            <input class="form-control" type="text" name="title" required>
+        </div>
+        <div class="form-group">
+            <h5>Enter new entry</h5>
+            <textarea class="form-control" id="entry" name="entry" rows="10" required></textarea>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
     </form>
 {% endblock %}

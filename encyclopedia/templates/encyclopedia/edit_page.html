@@ -7,10 +7,12 @@
 {% block body %}
     <form action="/edit_page/{{ title }}" method="post">
         {% csrf_token %}
-        <h5>Editting article</h5>
-        <br>
-        <textarea id="entry" name="entry">{{ entry }}</textarea>
-        <br>
-        <input type="submit" value="Submit">
+
+        <div class="form-group">
+            <h5>Editting article</h5>
+            <textarea class="form-control" id="entry" name="entry" rows="19">{{ entry }}</textarea>
+        </div>
+        <input class="btn btn-primary" type="submit" value="Submit">
+
     </form>
 {% endblock %}

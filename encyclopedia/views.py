@@ -51,7 +51,7 @@ def new_page(request):
                 return render(request, 'encyclopedia/entry.html', {
                     'entry': "Entry already exist."
                 })
-        with open(f"entries/{title}.md", mode='w', newline='') as file:
+        with open(f"entries/{title}.md", mode='w', newline='', encoding='utf-8') as file:
             file.write(request.POST['entry'])
         return HttpResponseRedirect(f"/wiki/{title}")
     else:
@@ -65,7 +65,7 @@ def edit_page(request, title):
     to coresponding article page.
     """
     if request.method == 'POST':
-        with open(f"entries/{title}.md", mode='w', newline='') as file:
+        with open(f"entries/{title}.md", mode='w', newline='', encoding='utf-8') as file:
             file.write(request.POST['entry'])
         return HttpResponseRedirect(f"/wiki/{title}")
     else:
