@@ -30,7 +30,7 @@ pip install markdown2
 
 To download this program, enter the following command in your terminal:
 ```
-git clone https://github.com/erichoangnle/wikipedia_clone.git
+git clone https://github.com/erichoangnle/cs50w_wiki.git
 ```
 
 ## Specification
@@ -93,4 +93,4 @@ Email: erichoangnle@gmail.com
 
 Facebook: https://www.facebook.com/eric.le.520900
 
-Project link: https://github.com/erichoangnle/wikipedia_clone.git
+Project link: https://github.com/erichoangnle/cs50w_wiki.git
